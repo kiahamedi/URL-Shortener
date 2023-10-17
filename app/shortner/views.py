@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 import uuid
 from shortner.models import Url
 from extensions.utils import get_client_ip
 from django.http import HttpResponse
 import datetime
+from django.utils import timezone
 
 
 # Create your views here.
@@ -31,6 +32,14 @@ def create(request):
             except:
                 break
         ip = get_client_ip(request)
-        new_url = Url(link=url, uuid=uid, ip=ip, expire=datetime.date.today() + datetime.timedelta(days=2))
+        new_url = Url(link=url, uuid=uid, ip=ip, expire=datetime.datetime.today() + datetime.timedelta(days=2))
         new_url.save()
         return HttpResponse(uid)
+
+
+def gourl(request, slug):
+    url_info = get_object_or_404(Url, uuid=slug)
+    if timezone.now() > url_info.expire:
+        return render(request, 'shortner/404.html')
+    else:
+        return redirect(url_info.link)
