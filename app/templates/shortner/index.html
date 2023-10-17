@@ -11,17 +11,13 @@
       <h1>URL Shortener</h1>
       <form method="post" id="post-form">
         {% csrf_token %}
-        <input type="url" name="link" placeholder="Enter URL" />
+        <input type="url" name="link" id="link" placeholder="Enter URL" />
         <button type="submit">Shorten</button>
       </form>
-      <p>
-        Short URL 1:
-        <a href="https://kiay.ir/ashdXw21">https://kiay.ir/ashdXw21</a>
+      <p id="short-one">
       </p>
 
-      <p>
-        Short URL 2:
-        <a href="https://short.kiahamedi.ir/ashdXw21">https://short.kiahamedi.ir/Slwiq2Xs</a>
+      <p id="short-two">
       </p>
 
       <div class="footer">
@@ -33,4 +29,5 @@
   </body>
 </html>
 
+<script src="{% static 'shortner/js/jquery-3.7.1.min.js' %}"></script>
 <script src="{% static 'shortner/js/main.js' %}"></script>
