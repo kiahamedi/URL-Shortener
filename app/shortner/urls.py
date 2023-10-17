@@ -6,13 +6,14 @@ from shortner.views import (
     gourl,
     test404,
 )
+from django.views.decorators.csrf import csrf_exempt
 
 
 app_name = "dashboard"
 
 urlpatterns = [
     path('', home, name="home"),
-    path('create/', create, name="create"),
+    path('create/', csrf_exempt(create), name="create"),
     path('<slug:slug>', gourl, name="gourl"),
     path('test404/', test404, name="test404"),
 ]
