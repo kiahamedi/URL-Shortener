@@ -1,1 +1,64 @@
-/* main css */
+
+
+/* Center the form */
+form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+/* Style the input and button */
+input[type="url"] {
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #494850;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style the result message */
+p {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #889791;
+}
+
+body {
+    background-color: #2C2C34;
+    overflow-y: hidden;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    color: #d8f6ea;
+    font-size: 50px;
+}
+
+a{
+    color: #d8f6ea;
+}
+
+.footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+    display: block;
+  }

@@ -1,14 +1,33 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shortner | KiaHamedi</title>
 
-    <link rel="stylesheet" href="{% static 'shortner/css/main.css' %}">
-</head>
-<body>
-    Index Page
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortner | KiaHamedi</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'shortner/css/main.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>URL Shortener</h1>
+      <form method="post">
+        <input type="url" name="url" placeholder="Enter URL" />
+        <button type="submit">Shorten</button>
+      </form>
+      <p>
+        Short URL 1:
+        <a href="https://kiay.ir/ashdXw21">https://kiay.ir/ashdXw21</a>
+      </p>
+
+      <p>
+        Short URL 2:
+        <a href="https://short.kiahamedi.ir/ashdXw21">https://short.kiahamedi.ir/Slwiq2Xs</a>
+      </p>
+
+      <div class="footer">
+        <p><a href="www.kiahamedi.ir">www.kiahamedi.ir</a></p>
+      </div> 
+    </div>
+
+    
+  </body>
 </html>
