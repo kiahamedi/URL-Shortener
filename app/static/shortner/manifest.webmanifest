@@ -1,0 +1,9 @@
+{
+    "name": "URL Shortener",
+    "short_name": "Shortener",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "landscape",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }
