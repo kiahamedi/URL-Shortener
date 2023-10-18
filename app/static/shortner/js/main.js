@@ -8,7 +8,7 @@ $(document).on('click', '#btn-link-one', function(){
 
 $(document).on('click', '#btn-link-two', function(){ 
     navigator.clipboard.writeText($("#link-two").text());
-    $("#btn-link-one").text("Copied");
+    $("#btn-link-two").text("Copied");
 });
 
 $(document).on('submit', '#post-form', function(e){
