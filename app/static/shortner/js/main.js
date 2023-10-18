@@ -23,9 +23,9 @@ $(document).on('submit', '#post-form', function(e){
         },
         success: function(data){
             $("#short-one").html('');
-            $("#short-one").append('URL Short 1: <a id="link-one" href="http://127.0.0.1:8000/' +data+ '">http://127.0.0.1:8000/' + data + '</a> <button id="btn-link-one">Copy</button>');
+            $("#short-one").append('URL Short 1: <a target="_blank" id="link-one" href="http://kiay.ir/' +data+ '">http://kiay.ir/' + data + '</a> <button id="btn-link-one">Copy</button>');
             $("#short-two").html('');
-            $("#short-two").append('URL Short 2: <a id="link-two" href="https://short.kiahamedi.ir/' +data+ '">https://short.kiahamedi.ir/' + data + '</a> <button id="btn-link-two">Copy</button>');
+            $("#short-two").append('URL Short 2: <a target="_blank" id="link-two" href="https://short.kiahamedi.ir/' +data+ '">https://short.kiahamedi.ir/' + data + '</a> <button id="btn-link-two">Copy</button>');
         }
     });
 });
