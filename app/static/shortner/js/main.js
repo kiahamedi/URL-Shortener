@@ -23,7 +23,7 @@ $(document).on('submit', '#post-form', function(e){
         },
         success: function(data){
             $("#short-one").html('');
-            $("#short-one").append('URL 1: <a target="_blank" id="link-one" href="http://kiay.ir/' +data+ '">http://kiay.ir/' + data + '</a> <button id="btn-link-one">Copy</button>');
+            $("#short-one").append('URL 1: <a target="_blank" id="link-one" href="https://kiay.ir/' +data+ '">https://kiay.ir/' + data + '</a> <button id="btn-link-one">Copy</button>');
             $("#short-two").html('');
             $("#short-two").append('URL 2: <a target="_blank" id="link-two" href="https://short.kiahamedi.ir/' +data+ '">https://short.kiahamedi.ir/' + data + '</a> <button id="btn-link-two">Copy</button>');
         }
