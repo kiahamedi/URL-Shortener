@@ -65,3 +65,14 @@ a{
     color: white;
     display: block;
   }
+
+#short-qr {
+    text-align: center;
+}
+
+.downloadqr {
+    margin-top: 15px ;
+    margin-left: 0px ;
+    margin-bottom: 0px ;
+    margin-right: 0px ;
+}
