@@ -76,3 +76,10 @@ a{
     margin-bottom: 0px ;
     margin-right: 0px ;
 }
+
+.expire-table {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 10px;
+}

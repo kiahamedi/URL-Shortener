@@ -42,6 +42,26 @@
         <input type="url" name="link" id="link" placeholder="Enter URL" />
         <button type="submit">Shorten</button>
       </form>
+
+      <div class="expire-table">
+        Do you need an expiring link? 
+        <table>
+            <tr>
+            <td><input id="expire_chbox" type="checkbox" name="expire_chbox" value="1"></td>
+            <td>
+                <select name="expire_dropdown" id="expire_dropdown" disabled>
+                <option>1 Day</option>
+                <option>2 Day</option>
+                <option>7 Day</option>
+                <option>15 Day</option>
+                <option>30 Day</option>
+                <option>60 Day</option>
+                <option>90 Day</option>
+                </select>
+            </td>
+            </tr>
+        </table>
+        </div>
       <p id="short-one">
       </p>
 

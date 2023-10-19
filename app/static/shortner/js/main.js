@@ -21,15 +21,29 @@ $(document).on('click', '#btn-download-qr', function(){
     anchor.click();
 });
 
+$("input[type='checkbox']").on('change', function() {
+    $(this).closest("tr").find("select[name=expire_dropdown]").prop("disabled", !this.checked)
+  });
+
 $(document).on('submit', '#post-form', function(e){
     e.preventDefault();
 
+    if ($('#expire_chbox').is(":checked") == true)
+    {
+        var is_expire = true;
+        var days = $('#expire_dropdown option:selected').text();
+    } else {
+        var is_expire = false;
+        var days = null;
+    }
     $.ajax({
         type: 'POST',
         url: '/create/',
         data: {
             link: $("#link").val(),
             csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val(),
+            is_expire: is_expire,
+            days: days
         },
         success: function(data){
             $("#short-one").html('');
