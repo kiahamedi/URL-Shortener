@@ -27,12 +27,12 @@ python manage.py runserver
 ```python
 python manage.py test shortner
 
-Found 4 test(s).
+Found 8 test(s).
 Creating test database for alias 'default'...
 System check identified no issues (0 silenced).
-....
+........
 ----------------------------------------------------------------------
-Ran 4 tests in 0.007s
+Ran 8 tests in 0.023s
 
 OK
 Destroying test database for alias 'default'...
