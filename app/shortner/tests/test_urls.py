@@ -2,11 +2,9 @@ from django.test import SimpleTestCase, Client
 from django.urls import reverse, resolve
 from shortner.views import (
     home,
-    create,
     gourl,
     test404,
 )
-import json
 
 
 client = Client()
