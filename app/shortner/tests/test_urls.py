@@ -13,7 +13,6 @@ client = Client()
 
 class TestUrls (SimpleTestCase):
     databases = {"default"}
-    allow_database_queries = True
 
     def test_home_url_is_resolved(self):
         url = reverse("dashboard:home")
