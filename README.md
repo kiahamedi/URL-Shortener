@@ -23,6 +23,22 @@ python manage.py runserver
 ```
 <br>
 
+# Run TestCase
+```python
+python manage.py test shortner
+
+Found 4 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.007s
+
+OK
+Destroying test database for alias 'default'...
+```
+<br>
+
 
 ## Are you a developer?
 > 1-Fork it!</br>
