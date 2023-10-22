@@ -1,5 +1,6 @@
 # URL-Shortener
-URL Shortener - Django
+URL Shortener is a tool to shorten a long link and create a short URL and QR-Code easy to share on sites, chat and emails. Track short URL traffic and manage your links.
+
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
