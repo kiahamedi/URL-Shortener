@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "URL-Shortener",
+    "short_name": "URL-Shortener",
+    "description": "URL Shortener is a tool to shorten a long link and create a short URL and QR-Code easy to share on sites, chat and emails. Track short URL traffic and manage your links.",
+    "icons": {
+        "512": "icons/icon_512.png",
+        "48": "icons/icon_48.png"
+    },
+    "version": "1.0.0",
+    "permissions": ["downloads"],
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "512": "icons/icon_512.png",
+            "48": "icons/icon_48.png"
+        },
+        "default_title": "URL-Shortener",
+        "default_popup": "/index.html"
+    }
+
+  }
