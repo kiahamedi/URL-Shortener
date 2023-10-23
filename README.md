@@ -7,6 +7,10 @@ URL Shortener is a tool to shorten a long link and create a short URL and QR-Cod
 # Demo
 ![Alt text](https://raw.githubusercontent.com/kiahamedi/URL-Shortener/main/Screenshot.png "Optional title")
 
+# Firefox Extention
+![Alt text](https://raw.githubusercontent.com/kiahamedi/URL-Shortener/main/firefox_extention/Screenshot_firefox.png "Optional title")
+[Install Firefox Extention](https://addons.mozilla.org/en-US/firefox/addon/kiay-shortener/)
+
 # Install
 ```python
 git clone https://github.com/kiahamedi/URL-Shortener.git
