@@ -7,7 +7,7 @@ import datetime
 from django.utils import timezone
 from django.http import JsonResponse
 import random
-
+from django_ratelimit.decorators import ratelimit
 
 # Create your views here.
 def home(request):
@@ -72,7 +72,7 @@ def login(request):
     context = {}
     return render(request, 'shortner/login.html', context)
 
-
+@ratelimit(key='ip', rate='10/m', block=True)
 def login_or_register(request):
     if request.method == "POST":
         phone = request.POST['phone']

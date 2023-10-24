@@ -2,7 +2,7 @@ asgiref==3.7.2
 certifi==2023.7.22
 charset-normalizer==3.3.1
 Django==4.2.6
-django-banish==0.2
+django-ratelimit==4.1.0
 idna==3.4
 python-memcached==1.59
 requests==2.31.0
