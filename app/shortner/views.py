@@ -72,7 +72,7 @@ def login(request):
     context = {}
     return render(request, 'shortner/login.html', context)
 
-@ratelimit(key='ip', rate='10/m', block=True)
+# @ratelimit(key='ip', rate='10/m', block=True)
 def login_or_register(request):
     if request.method == "POST":
         phone = request.POST['phone']
