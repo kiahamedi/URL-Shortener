@@ -2,8 +2,11 @@ asgiref==3.7.2
 certifi==2023.7.22
 charset-normalizer==3.3.1
 Django==4.2.6
+django-banish==0.2
 idna==3.4
+python-memcached==1.59
 requests==2.31.0
+six==1.16.0
 sqlparse==0.4.4
 typing_extensions==4.8.0
 urllib3==2.0.7
