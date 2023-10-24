@@ -83,3 +83,7 @@ a{
     color: aliceblue;
     margin-top: 10px;
 }
+
+.input-phone {
+    height: 35px;
+}

@@ -33,50 +33,32 @@
 
     <link rel="manifest" href="{% static 'shortner/manifest.webmanifest' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'shortner/css/main.css' %}" />
+
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+    
   </head>
   <body>
     <div class="container">
       <h1>URL Shortener</h1>
-      <form method="post" id="post-form">
-        {% csrf_token %}
-        <input type="url" name="link" id="link" placeholder="Enter URL" />
-        <button type="submit">Shorten</button>
-      </form>
 
-      <div class="expire-table">
-        Do you need an expiring link? 
-        <table>
-            <tr>
-            <td><input id="expire_chbox" type="checkbox" name="expire_chbox" value="1"></td>
-            <td>
-                <select name="expire_dropdown" id="expire_dropdown" disabled>
-                <option>1 Day</option>
-                <option>2 Day</option>
-                <option>7 Day</option>
-                <option>15 Day</option>
-                <option>30 Day</option>
-                <option>60 Day</option>
-                <option>90 Day</option>
-                </select>
-            </td>
-            </tr>
-        </table>
-        </div>
-      <p id="short-one">
-      </p>
+      <div id="login-part">
+        <input name="phone" type="text" id="phone" class="input-phone"/> 
+        <button id="btn-login">Login</button>
+      </div>
 
-      <p id="short-two">
-      </p>
+      <div id="verify-part" style="display: none;">
+        <input name="verify" type="text" id="verify" class="input-phone" placeholder="Enter OTP Code"/> 
+        <button id="btn-Verify">Verify</button>
+      </div>
+      
 
-      <p id="short-qr">
-        <!-- <div id="qrcode"></div>
-        <a class="downloadqr" id="downloadqr" href="" download="qr.png"><button>Download QR</button></a> -->
-      </p>
 
       
 
       <div class="footer">
-        <p id="footer-p"><a href="https://kiahamedi.ir">Blog</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/kiay-shortener/">Firefox</a> - <a href="https://github.com/kiahamedi/URL-Shortener">Github</a></p>
+        <p><a href="/">Home</a> - <a href="https://kiahamedi.ir">Blog</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/kiay-shortener/">Firefox</a> - <a href="https://github.com/kiahamedi/URL-Shortener">Github</a></p>
       </div> 
     </div>
 
@@ -86,4 +68,5 @@
 
 <script src="{% static 'shortner/js/jquery-3.7.1.min.js' %}"></script>
 <script src="{% static 'shortner/js/main.js' %}"></script>
+<script src="{% static 'shortner/js/login.js' %}"></script>
 <script src="{% static 'shortner/js/qrcode.min.js' %}"></script>
